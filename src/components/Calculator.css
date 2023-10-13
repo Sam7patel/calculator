@@ -1,0 +1,97 @@
+body {
+    background: linear-gradient(300deg, #00ffaa, #057a8c, #042f75);
+    background-size: 270% 270%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .calculator {
+    
+    width: 320px;
+    background-color: #131212;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+  }
+  
+  .calculator .display {
+    background-color:#131212;
+    padding: 10px;
+    text-align: right;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .calculator button {
+    background-color: #131212;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .calculator button:hover {
+    background-color: #555;
+  }
+  
+  .calculator .row-change {
+    display: flex;
+    flex-direction: column; /* Arrange buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    gap: 10px; /* Add space between buttons */
+  }
+  
+  .calculator .row-change button {
+    background-color: #131212;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .calculator .row-change button:hover {
+    background-color: #555;
+  }
+
+  .calculator .result-area {
+    background-color: #042f75; /* Dark blue color */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+    align-items: flex-end; /* Align content to the right */
+    padding: 10px;
+    font-size: 18px;
+    color: #fff; /* White text color */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
